@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="WinUI3App.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="WinUI3App">
+
+  <!-- local:MainPage/ -->
+  
+  <NavigationView SelectionChanged="OnSelectionChanged">
+    <NavigationView.MenuItems>
+      <NavigationViewItem Content="Main Page" Tag="MainPage">
+        <NavigationViewItem.Icon>
+          <FontIcon Glyph="&#xE7FC;"/>
+        </NavigationViewItem.Icon>
+      </NavigationViewItem>
+      <NavigationViewItem Content="My Page" Tag="MyPage"/>
+    </NavigationView.MenuItems>
+
+    <Frame x:Name="ContentFrame"/>
+  </NavigationView>
+</Window>

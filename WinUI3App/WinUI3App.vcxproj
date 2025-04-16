@@ -107,6 +107,9 @@
     <Manifest Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ControlPage.xaml.h">
+      <DependentUpon>ControlPage.xaml</DependentUpon>
+    </ClInclude>
     <ClInclude Include="MainPage.xaml.h">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </ClInclude>
@@ -123,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
+    <Page Include="ControlPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -132,6 +138,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ControlPage.xaml.cpp">
+      <DependentUpon>ControlPage.xaml</DependentUpon>
+    </ClCompile>
     <ClCompile Include="MainPage.xaml.cpp">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </ClCompile>

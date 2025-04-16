@@ -1,6 +1,12 @@
 ﻿namespace WinUI3App
 {
 	[default_interface]
+	runtimeclass ControlPage : Microsoft.UI.Xaml.Controls.Page
+	{
+		ControlPage();
+	}
+
+	[default_interface]
 	runtimeclass MyPage : Microsoft.UI.Xaml.Controls.Page
 	{
 		MyPage();

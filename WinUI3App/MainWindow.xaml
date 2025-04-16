@@ -19,6 +19,7 @@
         </NavigationViewItem.Icon>
       </NavigationViewItem>
       <NavigationViewItem Content="My Page" Tag="MyPage"/>
+      <NavigationViewItem Content="Control Page" Tag="ControlPage"/>
     </NavigationView.MenuItems>
 
     <Frame x:Name="ContentFrame"/>

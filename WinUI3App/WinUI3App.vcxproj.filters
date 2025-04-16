@@ -7,6 +7,7 @@
     <Page Include="MainWindow.xaml" />
     <Page Include="MainPage.xaml" />
     <Page Include="MyPage.xaml" />
+    <Page Include="ControlPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MainWindow.idl" />
@@ -57,5 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
   </ItemGroup>
 </Project>

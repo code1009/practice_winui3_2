@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="WinUI3App.ControlPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+  <Grid>
+    <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    <TextBlock Text="Hello, World!" FontSize="23" Margin="32,32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <ToggleButton Content="ToggleButton" Margin="24,72,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="32"  Click="TextBlock_Click" />
+    <Ellipse Margin="24,128,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="64" StrokeThickness="1" Stroke="Gray" Fill="LightGray" />
+    <Path x:Name="myPath" Margin="64,216,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Data="M0,0 L10,10 L10,20 L0,20 Z" Stroke="Gray" Fill="LightGray" StrokeThickness="1" Stretch="Fill" Width="96" Height="136" />
+
+  </Grid>
+</Page>

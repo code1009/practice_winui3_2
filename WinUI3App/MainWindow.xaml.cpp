@@ -6,6 +6,7 @@
 
 #include "MainPage.xaml.h"
 #include "MyPage.xaml.h"
+#include "ControlPage.xaml.h"
 
 
 
@@ -90,6 +91,10 @@ namespace winrt::WinUI3App::implementation
 		if (selectedTag == L"MainPage")
 		{
 			ContentFrame().Navigate(xaml_typename<WinUI3App::MainPage>());
+		}
+		if (selectedTag == L"ControlPage")
+		{
+			ContentFrame().Navigate(xaml_typename<WinUI3App::ControlPage>());
 		}
 	}
 }
